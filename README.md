@@ -1,4 +1,4 @@
-# b4 Project
+# B4 Project
 
 The aim of this project is to make a Raspberry Pi function as the sender, repeater or receiver of a Morse encoded message sent and received through GPIO pins.
 
