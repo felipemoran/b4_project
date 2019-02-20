@@ -1,4 +1,4 @@
-obj-m+=morse_fast_repeat.o
+obj-m+=morse_repeat.o
 
 all:
 	make -C /lib/modules/$(shell uname -r)/build/ M=$(PWD) modules

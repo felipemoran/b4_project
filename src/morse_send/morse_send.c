@@ -25,7 +25,7 @@ static unsigned int basePeriod = 100; // Preriod of the smallest interval. Defau
 
 volatile static bool hasNewMessage = false; // flow control variable. Indicated that a new message has been converted and is ready to be sent 
 volatile static bool doneSendingMessage = true; // flow control variable. Indicated that the message has been sent
-static char moduleName[15];          ///< Null terminated default string -- just in case
+static char moduleName[15];
 
 static char asciiMessage[ASCII_MESSAGE_SIZE]; // buffer for ascii message
 static char binaryMessage[BINARY_MESSAGE_SIZE];
@@ -34,7 +34,7 @@ static char binaryLetterBuffer[BINARY_LETTER_BUFFER_SIZE];
 // =============================== PARAMETERS =================================
 
 module_param(gpioOutput, uint, S_IRUGO);
-MODULE_PARM_DESC(gpioOutput, " GPIO Output number (default=22)");
+MODULE_PARM_DESC(gpioOutput, " Output GPIO number (default=22)");
 
 
 module_param(basePeriod, uint, S_IRUGO);
