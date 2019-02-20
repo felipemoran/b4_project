@@ -149,7 +149,7 @@ static int __init morseSend_init(void){
    printk(KERN_INFO "MORSE SEND: Initializing MORSE SEND kernel module\n");
    sprintf(moduleName, "morseSend");
 
-   kobj = kobject_create_and_add("morse", kernel_kobj); // kernel_kobj points to /sys/kernel
+   kobj = kobject_create_and_add("morseSend", kernel_kobj); // kernel_kobj points to /sys/kernel
    if(!kobj){
       printk(KERN_ALERT "MORSE SEND: failed to create kobject\n");
       return -ENOMEM;
